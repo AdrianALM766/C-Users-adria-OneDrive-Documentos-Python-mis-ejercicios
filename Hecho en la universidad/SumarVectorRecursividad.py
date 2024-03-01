@@ -5,6 +5,30 @@ def suma_recursiva(vector, indice):
         return vector[indice] + suma_recursiva(vector, indice - 1)
 
 
-v= [4, 2, 3, 1, 5,4]
-resul = suma_recursiva(v, len(v) - 1)
-print("La suma recursiva del vector es:", resul)
+
+
+def menu():
+    vector=[]
+    me=True
+    while (me==True):
+            print("MENU")
+            print("Crear vector=1")
+            print("mostrar suma=2")
+            print("salir=3")
+            opc=int(input("Ingrese la opcion: "))
+            print("-"*10)
+            print("-"*10)
+            if (opc==1):
+                dato=int(input("ingrese el dato: "))
+                vector+=[dato]
+                print(vector)
+            elif(opc==2):
+                resul=suma_recursiva(vector,len(vector)-1)
+                print("la suma recursiva es: ",resul)
+            elif(opc==3):
+                print("listo")
+                me=False
+            else:
+                print("elija otra opcion.")
+
+menu()
