@@ -1,8 +1,8 @@
-def suma_recursiva(vector, indice):
-    if indice == 0:
-        return vector[0]
+def suma_recursiva(vector, indice=0):
+    if indice >=len(vector):
+        return 0
     else:
-        return vector[indice] + suma_recursiva(vector, indice - 1)
+        return vector[indice] + suma_recursiva(vector, indice + 1)
 
 
 
@@ -23,7 +23,7 @@ def menu():
                 vector+=[dato]
                 print(vector)
             elif(opc==2):
-                resul=suma_recursiva(vector,len(vector)-1)
+                resul=suma_recursiva(vector)
                 print("la suma recursiva es: ",resul)
             elif(opc==3):
                 print("listo")
