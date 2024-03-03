@@ -28,7 +28,7 @@ def menu():
         opc = int(input(Color.YELLOW + "Ingrese la opción: ".center(56) + Color.RESET))
         if opc == 1:
             dato = int(input(Color.YELLOW + "Ingrese el dato: ".center(56) + Color.RESET))
-            vector.append(dato)
+            vector+=[dato]
         elif opc == 2:
             if len(vector) > 1:
                 resul = suma_recursiva(vector)
