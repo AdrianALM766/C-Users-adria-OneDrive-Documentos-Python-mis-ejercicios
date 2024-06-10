@@ -1,5 +1,5 @@
 #suma de numeros pares
-def Sumar_npar(lista):
+def Sumar_numeros_pares(lista):
     suma=0
     i=0
     #recorer lista
@@ -11,5 +11,5 @@ def Sumar_npar(lista):
         i+=1
     return suma
 li=[1,2,2,4,10]
-var=Sumar_npar(li)
+var=Sumar_numeros_pares(li)
 print(var)
